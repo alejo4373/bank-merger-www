@@ -34,12 +34,16 @@ class  Footer extends  Component {
                         <div className="logos-unit">
                             <div className="built-by">
                                 <p><br/><br/>Built by:</p> <img src="https://cdn.tipe.io/5ae9f2a4323fc90013cb4dfa/ffb2acc8-9b36-40ef-bb9a-deb6ecb5ee55/demand-progress.png"/>
-                                <p><br/><br/>In partnership with:</p> <img src="https://cdn.tipe.io/5ae9f2a4323fc90013cb4dfa/c7679f4c-3ee7-4670-84a5-b0c4f2f2e2dc/DailyKosLogo.png" alt="Daily Kos" />
                             </div>
-                            <div className="logos" style={{display: "flex", flexFlow: "row wrap", justifyContent: "center", alignItems: "center"}}>
-                                {logos}
+                            <div className="parteners"> 
+                                <p>In partnership with:</p>
+                                <img src="https://cdn.tipe.io/5ae9f2a4323fc90013cb4dfa/c7679f4c-3ee7-4670-84a5-b0c4f2f2e2dc/DailyKosLogo.png" alt="Daily Kos" />
+                                <div className="logos" style={{display: "flex", flexFlow: "row wrap", justifyContent: "center", alignItems: "center"}}>
+                                    {logos}
+                                </div>
                             </div>
-                            <div className="media-press-social">
+                                                   </div>
+                                                    <div className="media-press-social">
                                 <div className="social-media">
                                     <a className="twitter" href={tweet} target="_blank">
                                         <img src="images/twitter_white.svg" />
@@ -62,7 +66,7 @@ class  Footer extends  Component {
                                 </div>
                             </div>
                             <div className="orgs">{logosText.substring(0, logosText.length-2)}</div>
-                        </div>
+
                     </div>
                 </div>);
         }
